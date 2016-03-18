@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon App Portfolio</string>
+    <string name="app_list_title">Mes Apps Nanodegree!</string>
+    <string name="app_built_it_bigger_name">Construire plus grand</string>
+    <string name="app_library_name">App bibliothèque</string>
+    <string name="app_spotify_streamer_name">Streamer Spotify</string>
+    <string name="app_super_duo_name">App Scores</string>
+    <string name="app_xyz_reader_name">Reader XYZ</string>
+    <string name="capstone_my_app">Apogée: Ma propre App</string>
+    <string name="work_in_progress">Travail en cours…</string>
+</resources>
