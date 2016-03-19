@@ -6,6 +6,12 @@
     <color name="colorAccentPressed">#E83A75</color>
     <color name="orange">#F08C35</color>
     <color name="orangePressed">#D97F30</color>
-    <color name="colorTextTitle">#333333</color>
     <color name="colorShadow">#333333</color>
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="colorTextLight">#FFFFFF</color>
+
+    <color name="colorDivider">#B6B6B6</color>
+
 </resources>
