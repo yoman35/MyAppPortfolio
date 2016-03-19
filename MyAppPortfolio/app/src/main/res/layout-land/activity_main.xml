@@ -1,127 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="yb.sunshine.MainActivity">
-
-    <TextView
-        android:id="@+id/app_list_title"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:gravity="center"
-        android:text="@string/app_list_title"
-        android:layout_marginBottom="@dimen/app_list_title_margin_bottom"
-        android:textColor="@color/colorTextTitle"
-        android:textSize="@dimen/title_size"/>
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="yb.sunshine.MainActivity">
+
+        <TextView
+            android:id="@+id/app_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_list_title"
+            style="@style/Title.Big"/>
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button_spotify_app"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/app_spotify_streamer_name"
-                android:textAllCaps="true"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button_scores_app"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/app_super_duo_name"
-                android:textAllCaps="true"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/button_spotify_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_spotify_streamer_name"
+                    style="@style/AppButton" />
 
-            <Button
-                android:id="@+id/button_library_app"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/app_library_name"
-                android:textAllCaps="true"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/button_scores_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_super_duo_name"
+                    style="@style/AppButton" />
 
+                <Button
+                    android:id="@+id/button_library_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_library_name"
+                    style="@style/AppButton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_built_it_bigger_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_built_it_bigger_name"
+                    style="@style/AppButton" />
+
+                <Button
+                    android:id="@+id/button_xyz_reader_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_xyz_reader_name"
+                    style="@style/AppButton" />
+
+                <Button
+                    android:id="@+id/button_capstone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/capstone_my_app"
+                    style="@style/AppButton.Accent"/>
+
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button_built_it_bigger_app"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/app_built_it_bigger_name"
-                android:textAllCaps="true"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/button_xyz_reader_app"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/app_xyz_reader_name"
-                android:textAllCaps="true"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/button_capstone"
-                android:layout_width="@dimen/app_button_width"
-                android:layout_height="?attr/actionBarSize"
-                android:text="@string/capstone_my_app"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:background="@drawable/app_button_accent"
-                android:elevation="5dp"
-                android:layout_marginBottom="@dimen/app_button_margin_bottom"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

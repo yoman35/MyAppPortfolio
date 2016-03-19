@@ -6,4 +6,32 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Title" parent="AppTheme">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/app_list_title_margin_bottom</item>
+    </style>
+
+    <style name="Title.Big" parent="Title">
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="AppButton" parent="AppTheme">
+        <item name="android:width">@dimen/app_button_width</item>
+        <item name="android:height">?attr/actionBarSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/app_button</item>
+        <item name="android:layout_marginBottom">@dimen/app_button_margin_bottom</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppButton.Accent" parent="AppButton">
+        <item name="android:background">@drawable/app_button_accent</item>
+    </style>
+
 </resources>
